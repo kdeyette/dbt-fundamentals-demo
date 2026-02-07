@@ -5,9 +5,13 @@
     This will override configurations stated in dbt_project.yml
 
     Try changing "table" to "view" below
+
+    Notes: need to remove the jinja below AND 
+           reconfigure the dbt_project.yml if want to edit at global level
 */
 
-{{ config(materialized='table') }}
+--{{ config(materialized='table') }}
+{{ config(materialized='view') }}
 
 with source_data as (
 
