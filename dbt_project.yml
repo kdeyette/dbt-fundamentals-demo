@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'dbt-fundamentals-demo'
+name: 'dbt_fundamentals_demo'
 version: '1.0.0'
 config-version: 2
 
@@ -36,7 +36,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  dbt-fundamentals-demo:
+  dbt_fundamentals_demo:
     # Applies to all files under models/staging/
     # staging models should be views - linked directly to source
     ## constantly getting new records so doesn't make sense to keep as a table
